@@ -1,0 +1,62 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARGPARSE_H	argparse.h	2;"	d
+BAD_ARG_MSG	argparse.h	20;"	d
+EOF_REACHED	testcase.h	7;"	d
+EXIT_CHAR	record.h	18;"	d
+FNAME_LEN	kbd_sym.c	18;"	d	file:
+HELP_MSG	argparse.h	8;"	d
+NO_EOF	testcase.h	8;"	d
+RAW_MODE_H	raw_mode.h	2;"	d
+RECORD_H	record.h	2;"	d
+SRC	Makefile	/^SRC=argparse.c  kbd_sym.c  raw_mode.c  record.c$/;"	m
+TESTCASE_H	testcase.h	2;"	d
+append_testcase	testcase.c	/^t_testcase			*append_testcase(char c, long long delay_ms)$/;"	f
+c	testcase.h	/^	char		c;$/;"	m	struct:s_testcase
+cmd_argc	argparse.h	/^	int			cmd_argc;$/;"	m	struct:params_play
+cmd_argv	argparse.h	/^	char		**cmd_argv;$/;"	m	struct:params_play
+current_timestamp	record.c	/^long long current_timestamp() {$/;"	f
+delay_ms	testcase.h	/^	long long	delay_ms;$/;"	m	struct:s_testcase
+disableRawMode	raw_mode.c	/^void disableRawMode()$/;"	f
+dump_testcase	testcase.c	/^void	dump_testcase(t_testcase *l, union params *options)$/;"	f
+enableRawMode	raw_mode.c	/^void enableRawMode()$/;"	f
+extract_single_action	testcase.c	/^int		extract_single_action(t_testcase **l, char *c, long long *delay)$/;"	f
+fill_play_params	argparse.c	/^static mode	fill_play_params(int argc, char **argv, union params *options)$/;"	f	file:
+fill_record_params	argparse.c	/^static mode	fill_record_params(int argc, char **argv, union params *options)$/;"	f	file:
+fname	argparse.h	/^	char		*fname;$/;"	m	struct:params_play
+fname	argparse.h	/^	char		*fname;$/;"	m	struct:params_rec
+get_mode	argparse.c	/^mode	get_mode(int argc, char **argv, union params *options)$/;"	f
+init_params_union	argparse.c	/^static void	init_params_union(union params *options)$/;"	f	file:
+interactive	argparse.h	/^	int			interactive;$/;"	m	struct:params_play
+invalid	argparse.h	/^	invalid$/;"	e	enum:__anon1
+looks_like_word	argparse.c	/^static int		looks_like_word(char *s, char *word)$/;"	f	file:
+main	exec.c	/^int	main(int argc, char **argv, char **env)$/;"	f
+main	kbd_sym.c	/^int	main(int argc, char **argv)$/;"	f
+mode	argparse.h	/^} mode;$/;"	t	typeref:enum:__anon1
+new_testcase	testcase.c	/^t_testcase	*new_testcase(char c, long long delay_ms)$/;"	f
+next	testcase.h	/^	struct s_testcase	*next;$/;"	m	struct:s_testcase	typeref:struct:s_testcase::s_testcase
+orig_termios	raw_mode.h	/^struct termios orig_termios;$/;"	v	typeref:struct:termios
+params	argparse.h	/^union	params$/;"	u
+params_play	argparse.h	/^typedef	struct	params_play$/;"	s
+params_rec	argparse.h	/^typedef	struct	params_rec$/;"	s
+pid	argparse.h	/^	pid_t		pid;$/;"	m	struct:params_play
+play	argparse.h	/^	play,$/;"	e	enum:__anon1
+play	argparse.h	/^	t_params_play	play;$/;"	m	union:params
+print_usage	argparse.c	/^static void	print_usage(void)$/;"	f	file:
+read_testcase	testcase.c	/^t_testcase	*read_testcase(union params *options)$/;"	f
+record	argparse.h	/^	record, $/;"	e	enum:__anon1
+record	argparse.h	/^	t_params_rec	record;$/;"	m	union:params
+record_dump	record.c	/^void	record_dump(union params *options)$/;"	f
+s_testcase	testcase.h	/^typedef struct	s_testcase$/;"	s
+speedup	argparse.h	/^	int			speedup;$/;"	m	struct:params_play
+stackchar	kbd_sym.c	/^void stackchar(int fd, char c)$/;"	f
+t_params_play	argparse.h	/^}				t_params_play;$/;"	t	typeref:struct:params_play
+t_params_rec	argparse.h	/^}				t_params_rec;$/;"	t	typeref:struct:params_rec
+t_testcase	testcase.h	/^}				t_testcase;$/;"	t	typeref:struct:s_testcase
+verbose_play_options	argparse.c	/^void	verbose_play_options(union params options)$/;"	f
+verbose_record_options	argparse.c	/^void	verbose_record_options(union params options)$/;"	f
+xread	testcase.c	/^static int	xread(int fd, char *c, long long *delay)$/;"	f	file:
